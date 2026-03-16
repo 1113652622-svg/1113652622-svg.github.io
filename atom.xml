@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>http://localhost:5000</id>
+    <title>allki&#39;s blog</title>
+    <subtitle>望月阁</subtitle>
+    <icon>http://localhost:5000/assets/favicon.ico</icon>
+    <link href="http://localhost:5000" />
+    <author>
+      <name>allki</name>
+    </author>
+    <updated>2026-03-16T17:05:09.000Z</updated>
+    <entry>
+        <id>http://localhost:5000/2026/03/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</id>
+        <title>我的第一篇文章</title>
+        <link rel="alternate" href="http://localhost:5000/2026/03/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
+        <content type="html">&lt;p&gt;我成功了！&lt;/p&gt;
+</content>
+        <updated>2026-03-16T17:05:09.000Z</updated>
+    </entry>
+</feed>

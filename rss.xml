@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>allki&#39;s blog</title>
+        <subtitle>望月阁</subtitle>
+        <icon>http://localhost:5000/assets/favicon.ico</icon>
+        <link>http://localhost:5000</link>
+        <author>
+          <name>allki</name>
+        </author>
+        <description>我的个人博客</description>
+        <language>zh-CN</language>
+        <pubDate>Tue, 17 Mar 2026 01:05:09 +0800</pubDate>
+        <lastBuildDate>Tue, 17 Mar 2026 01:05:09 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">http://localhost:5000/2026/03/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</guid>
+            <title>我的第一篇文章</title>
+            <link>http://localhost:5000/2026/03/17/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</link>
+            <pubDate>Tue, 17 Mar 2026 01:05:09 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;我成功了！&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
