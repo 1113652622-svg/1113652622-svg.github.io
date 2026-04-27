@@ -1,0 +1,25 @@
+alternate: "望月阁"
+experiments:
+  antiFakeWebsite: false
+menu:
+  home: / || home
+  archives: /archives/ || archive
+
+social:
+  github: https://github.com/1113652622-svg || github || "#191717"
+
+sidebar:
+  position: left
+  avatar: avatar.jpg
+
+homeConfig:
+  coverConfig:
+    enableCover: true
+    enablePreload: false
+    image_list:
+      - https://fastly.jsdelivr.net/gh/theme-shoka-x/images@main/cover/1.webp
+      - https://fastly.jsdelivr.net/gh/theme-shoka-x/images@main/cover/2.webp
+      - https://fastly.jsdelivr.net/gh/theme-shoka-x/images@main/cover/3.webp
+      - https://fastly.jsdelivr.net/gh/theme-shoka-x/images@main/cover/4.webp
+      - https://fastly.jsdelivr.net/gh/theme-shoka-x/images@main/cover/5.webp
+      - https://fastly.jsdelivr.net/gh/theme-shoka-x/images@main/cover/6.webp
