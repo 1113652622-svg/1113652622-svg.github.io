@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+
+backend:
+  name: github
+  repo: 1113652622-svg/1113652622-svg.github.io
+  branch: main
+
+media_folder: source/images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: posts
+    label: 文章
+    label_singular: 文章
+    folder: source/_posts
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: md
+    format: frontmatter
+    fields:
+      - label: 标题
+        name: title
+        widget: string
+
+      - label: 发布日期
+        name: date
+        widget: datetime
+
+      - label: 更新日期
+        name: updated
+        widget: datetime
+        required: false
+
+      - label: 分类
+        name: categories
+        widget: list
+        required: false
+        field:
+          label: 分类名
+          name: category
+          widget: string
+
+      - label: 标签
+        name: tags
+        widget: list
+        required: false
+        field:
+          label: 标签名
+          name: tag
+          widget: string
+
+      - label: 封面图
+        name: cover
+        widget: image
+        required: false
+
+      - label: 摘要
+        name: excerpt
+        widget: text
+        required: false
+
+      - label: 正文
+        name: body
+        widget: markdown
