@@ -6,7 +6,7 @@ backend:
   branch: main
 
 media_folder: source/images/uploads
-public_folder: /images/uploads
+public_folder: images/uploads
 
 collections:
   - name: posts
