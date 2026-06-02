@@ -54,6 +54,11 @@ collections:
         widget: image
         required: false
 
+      - label: 文章页背景图
+        name: background
+        widget: image
+        required: false
+
       - label: 摘要
         name: excerpt
         widget: text
