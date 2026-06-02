@@ -3,7 +3,11 @@ experiments:
   antiFakeWebsite: false
 menu:
   home: / || home
-  archives: /archives/ || archive
+  posts:
+    default: / || feather
+    categories: /categories/ || th
+    tags: /tags/ || tags
+    archives: /archives/ || list-alt
 
 social:
   github: https://github.com/1113652622-svg || github || "#191717"
