@@ -1,3 +1,5 @@
+const DEFAULT_ARTICLE_COVER = "images/uploads/default-cover.jpg";
+
 function normalizeCoverPath(cover) {
   if (typeof cover !== "string") {
     return cover;
@@ -32,16 +34,16 @@ function randomCover(count, images) {
   return count > 1 ? Array.from({ length: count }, select) : select();
 }
 
+function fixedCover() {
+  return normalizeCoverPath(hexo.theme.config.homeConfig?.fixedCover || "");
+}
+
 function headerCover(item) {
   if (item.background) {
     return normalizeCoverPath(item.background);
   }
 
-  if (item.cover) {
-    return normalizeCoverPath(item.cover);
-  }
-
-  return randomCover(1, hexo.theme.config.image_list);
+  return fixedCover() || randomCover(1, hexo.theme.config.image_list);
 }
 
 hexo.extend.filter.register("before_generate", () => {
@@ -56,7 +58,8 @@ hexo.extend.filter.register("before_generate", () => {
       return normalizeCoverPath(item.photos[0]);
     }
 
-    return randomCover(count, hexo.theme.config.image_list);
+    const cover = normalizeCoverPath(DEFAULT_ARTICLE_COVER);
+    return count > 1 ? Array.from({ length: count }, () => cover) : cover;
   });
 
   hexo.extend.helper.register("_cover_index", function(item) {
@@ -70,7 +73,7 @@ hexo.extend.filter.register("before_generate", () => {
 });
 
 hexo.extend.filter.register("template_locals", (locals) => {
-  if (!locals.page.__index && locals.theme.homeConfig?.fixedCover) {
+  if (!locals.page.__index && locals.page.background && locals.theme.homeConfig?.fixedCover) {
     locals.theme = {
       ...locals.theme,
       homeConfig: {
