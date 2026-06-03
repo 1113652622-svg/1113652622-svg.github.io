@@ -1,3 +1,22 @@
+body,
+.header,
+.sidebar,
+.menu,
+.overview,
+.article,
+.article .md,
+.post,
+.item,
+nav,
+button,
+input,
+textarea {
+  font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", "Source Han Sans SC", Arial, sans-serif;
+}
+
+.article .md {
+  font-family: "SimSun", "Songti SC", "Noto Serif SC", "Source Han Serif SC", "Microsoft YaHei", serif;
+}
 /* Keep the article TOC readable without requiring scroll activation. */
 .contents .toc-level-1 > .toc-child,
 .contents .toc-level-2 > .toc-child {
