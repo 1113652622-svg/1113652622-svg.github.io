@@ -74,7 +74,37 @@
 .article .md .anchor:focus {
   opacity: 0.45;
 }
+/* 修复深色模式下文章文字过暗 */
+html[data-theme="dark"] .article .md,
+html[data-theme="dark"] .article .md p,
+html[data-theme="dark"] .article .md li,
+html[data-theme="dark"] .article .md blockquote,
+html[data-theme="dark"] .article .md td,
+html[data-theme="dark"] .article .md th {
+  color: rgba(230, 236, 245, 0.88) !important;
+}
 
+html[data-theme="dark"] .article .md h1,
+html[data-theme="dark"] .article .md h2,
+html[data-theme="dark"] .article .md h3,
+html[data-theme="dark"] .article .md h4,
+html[data-theme="dark"] .article .md h5,
+html[data-theme="dark"] .article .md h6 {
+  color: rgba(245, 248, 252, 0.95) !important;
+}
+
+html[data-theme="dark"] .contents,
+html[data-theme="dark"] .contents .toc-link,
+html[data-theme="dark"] .sidebar,
+html[data-theme="dark"] .sidebar a {
+  color: rgba(225, 232, 240, 0.82) !important;
+}
+
+html[data-theme="dark"] .contents .active > .toc-link,
+html[data-theme="dark"] .contents .current > .toc-link,
+html[data-theme="dark"] .contents .toc-link:hover {
+  color: #ff8fb3 !important;
+}
 .article .md p {
   margin-bottom: 1rem;
 }
