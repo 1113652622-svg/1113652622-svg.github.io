@@ -11,11 +11,25 @@ nav,
 button,
 input,
 textarea {
-  font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", "Source Han Sans SC", Arial, sans-serif;
+  font-family: "LXGW WenKai Screen", "LXGW WenKai", "霞鹜文楷", "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif;
 }
 
 .article .md {
-  font-family: "SimSun", "Songti SC", "Noto Serif SC", "Source Han Serif SC", "Microsoft YaHei", serif;
+  font-family: "LXGW WenKai Screen", "LXGW WenKai", "霞鹜文楷", "Microsoft YaHei", "PingFang SC", sans-serif;
+  font-size: 1rem;
+  line-height: 1.95;
+  letter-spacing: 0.015em;
+}
+
+.article .md h1,
+.article .md h2,
+.article .md h3,
+.article .md h4,
+.article .md h5,
+.article .md h6 {
+  font-family: "LXGW WenKai Screen", "LXGW WenKai", "霞鹜文楷", "Microsoft YaHei", "PingFang SC", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
 }
 /* Keep the article TOC readable without requiring scroll activation. */
 .contents .toc-level-1 > .toc-child,
