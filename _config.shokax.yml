@@ -28,3 +28,6 @@ coverConfig:
       - https://fastly.jsdelivr.net/gh/theme-shoka-x/images@main/cover/4.webp
       - https://fastly.jsdelivr.net/gh/theme-shoka-x/images@main/cover/5.webp
       - https://fastly.jsdelivr.net/gh/theme-shoka-x/images@main/cover/6.webp
+
+pagefind:
+  enable: true
